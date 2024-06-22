@@ -12,7 +12,7 @@
         background-color: transparent;
       }
       #images::-webkit-scrollbar {
-       display: none;
+        display: none;
       }
       #content::-webkit-scrollbar-thumb {
         background-color: rgb(255, 77, 36);
@@ -28,14 +28,8 @@
             <div class="h-5 w-5 bg-black rounded-[50%]"></div>
           </div>
           <div class="flex gap-3 sm:gap-10 font-semibold">
-            <h1
-              class="hover:cursor-pointer hover:text-gray-400 hidden md:block"
-            >
-              EN
-            </h1>
-            <h1
-              class="hover:cursor-pointer hover:text-gray-400 font-normal hidden md:block"
-            >
+            <h1 class="hover:cursor-pointer hover:text-gray-400">EN</h1>
+            <h1 class="hover:cursor-pointer hover:text-gray-400 font-normal">
               EU
             </h1>
             <h1
@@ -43,21 +37,31 @@
             >
               Country: Russia
             </h1>
-            <h1 class="hover:cursor-pointer hover:text-gray-400">Profile</h1>
-            <h1 class="hover:cursor-pointer hover:text-gray-400">
+            <h1
+              class="hover:cursor-pointer hidden md:block hover:text-gray-400"
+            >
+              Profile
+            </h1>
+            <h1
+              class="hover:cursor-pointer hidden md:block hover:text-gray-400"
+            >
               Wishlist(2)
             </h1>
-            <h1 class="hover:cursor-pointer hover:text-gray-400">Search</h1>
+            <h1
+              class="hidden md:block hover:cursor-pointer hover:text-gray-400"
+            >
+              Search
+            </h1>
           </div>
         </div>
         <div
-          class="sm:flex sm:w-[80vw] w-[100vw] text-sm flex mt-6 ml-2 justify-evenly sm:justify-between"
+          class="sm:flex sm:w-[100vw] w-[80vw] text-sm flex mt-6 ml-2 justify-around sm:justify-between"
           id="nav-part2"
         >
           <h1>SUN</h1>
           <h1>OPTICAL</h1>
           <h1>COLLECTIONS</h1>
-          <h1>STUDIO</h1>
+          <h1 class="hidden md:block">STUDIO</h1>
           <h1 class="hidden md:block">ABOUT</h1>
           <h1 class="hidden md:block">SHOPS</h1>
           <h1 class="hidden md:block">JOURNAL</h1>
@@ -66,36 +70,50 @@
       <div class="h-[85vh]">
         <div class="h-[30vh]">
           <div id="content" class="h-[100%] w-[100%] pl- flex overflow-x-auto">
-            <div
-              class="elem h-[100%] w-[55%] shrink-0 flex flex-col justify-center"
-            >
-              <h1 class="text-[18.5vh]">Uttrakhand</h1>
+            <div class="elem shrink-0 h-[20vh]  w-[70vw] flex flex-col justify-center ">
+              <h1 class="md:text-[18.5vh] text-[10vh] p-10">Uttrakhand</h1>
             </div>
-            <div class="elem h-[100%] w-[55%] shrink-0 flex justify-center">
-              <h1 class="text-[18.5vh]">Mizoram</h1>
+            <div class="elem shrink-0 h-[20vh]  w-[70vw]  flex flex-col justify-center">
+              <h1 class="md:text-[18.5vh] text-[10vh] p-10">Mizoram</h1>
             </div>
-            <div class="elem h-[100%] w-[55%] shrink-0 flex justify-center">
-              <h1 class="text-[18.5vh]">Nagaland</h1>
+            <div class="elem shrink-0  h-[20vh]  w-[70vw] flex flex-col justify-center">
+              <h1 class="md:text-[18.5vh] text-[10vh] p-10">Nagaland</h1>
             </div>
-            <div class="elem h-[100%] w-[55%] shrink-0 flex justify-center">
-              <h1 class="text-[18.5vh]">Assam</h1>
+            <div class="elem shrink-0 h-[20vh]  w-[70vw]  flex flex-col justify-center">
+              <h1 class="md:text-[18.5vh] text-[10vh] p-10">Nepal</h1>
             </div>
+        
           </div>
         </div>
         <div id="images" class="flex overflow-x-auto">
           <div class="h-[55vh] shrink-0 w-[100%] bg-blue-400">
-            <img src="https://images.pexels.com/photos/20847919/pexels-photo-20847919/free-photo-of-town-on-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="h-[100%] w-[100%] object-cover" alt="">
+            <img
+              src="https://images.pexels.com/photos/20847919/pexels-photo-20847919/free-photo-of-town-on-hill.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="h-[100%] w-[100%] object-cover"
+              alt=""
+            />
           </div>
           <div class="h-[55vh] shrink-0 w-[100%] bg-blue-400">
-            <img src="https://images.pexels.com/photos/25533704/pexels-photo-25533704/free-photo-of-travel-photography.jpeg" class="h-[100%] w-[100%] object-cover " alt="">
+            <img
+              src="https://images.pexels.com/photos/25533704/pexels-photo-25533704/free-photo-of-travel-photography.jpeg"
+              class="h-[100%] w-[100%] object-cover"
+              alt=""
+            />
           </div>
           <div class="h-[55vh] shrink-0 w-[100%] bg-blue-400">
-            <img src="https://media.istockphoto.com/id/1323055401/photo/view-of-aizwal-city-just-before-the-sunset.webp?s=2048x2048&w=is&k=20&c=j9H-iv-hdJiQePo9mOJw-A_QXg_v-l2jwLSsi2LvUpg=" class="h-[100%] w-[100%] object-cover " alt="">
+            <img
+              src="https://media.istockphoto.com/id/1323055401/photo/view-of-aizwal-city-just-before-the-sunset.webp?s=2048x2048&w=is&k=20&c=j9H-iv-hdJiQePo9mOJw-A_QXg_v-l2jwLSsi2LvUpg="
+              class="h-[100%] w-[100%] object-cover"
+              alt=""
+            />
           </div>
           <div class="h-[55vh] shrink-0 w-[100%] bg-blue-400">
-            <img src="https://images.pexels.com/photos/8061291/pexels-photo-8061291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="h-[100%] w-[100%] object-cover " alt="">
+            <img
+              src="https://images.pexels.com/photos/8061291/pexels-photo-8061291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              class="h-[100%] w-[100%] object-cover"
+              alt=""
+            />
           </div>
-   
         </div>
       </div>
     </main>
